@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    direction: rtl;
+}
+body {
+    background-color: #eee;
+}
+.container {
+    width: 100%;
+    max-width: 1170px;
+    border-radius: 0.5rem;
+    height: 500px;
+    margin: 5rem auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+ul {
+    list-style: none;
+}
+.menu {
+    background-color: #ccc;
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul li {
+    margin: 1rem 0;
+}
+ul a{
+    text-decoration: none;
+    color: #3f58e4;
+    font-weight: 800;
+}
+ul a:hover {
+    color: #1c3df8;
+}
+.content {
+    border:1px solid #ccc;
+    margin: 0.3rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    padding: 0.3rem;   
+}
+.tabGtoups {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: row;
+}
+.tabGtoups .tab {
+    width: 110px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding:0.5rem;
+    background-color: rgb(216, 216, 216);
+    position:relative;
+    cursor: pointer;
+    border:1px solid #aaa;
+}
+.tab.active {
+    background-color: #fff;;
+}
+.tab .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #988;
+    cursor: pointer;
+}
+.pages {
+    background-color: #fff;
+    height: 400px;
+    border:1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.page {
+    opacity: 0;
+    display: none;
+}
+.page.active {
+    opacity: 1;
+    display: block;
+}
